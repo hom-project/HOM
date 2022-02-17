@@ -1,0 +1,33 @@
+body {
+    background-color: #E4E5FB;
+    color: #E4E5FB;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    animation-name: intro;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes intro {
+    from {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    to {
+        width: 50%;
+        height: 50%;
+        left: 25%;
+        top: 25%;
+    }
+}

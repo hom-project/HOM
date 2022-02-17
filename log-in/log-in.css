@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Raleway&family=Roboto+Mono:wght@100&family=Ubuntu:wght@300&display=swap');
+h1, h2, h3, h4, h5, h6, button {
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background: url("../images/img0.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main{
+    height:450px;
+    width: 25rem;
+    padding-top: 40px;
+    margin-top: 20vh;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.header{
+    margin-bottom: 20px;
+    color:white;
+}
+
+.header label{
+    font-size: 1.5rem;
+}
+.header label:hover{
+    text-shadow: 1px 10px 10px blue;
+}
+
+
+.inpt{
+    background:none;
+    width: 80%;
+    height: 60px;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+input .inpt {
+    font-family: 'Ubuntu', sans-serif !important;
+}
+.input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+.input input:focus{
+border-bottom: 2px solid white;
+}
+.input input::placeholder{
+
+    font-size: 0.8rem;
+    color:black;
+}
+
+.input input:hover{
+    border-color: skyblue;
+
+}
+
+.links p{
+    padding: 0;
+    margin: 0;
+}
+.links p a{
+    padding-right: 50px;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.links p a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+.input button{
+    background: linear-gradient(90deg,  #03a9f4, #f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.input button:hover{
+    animation: animate 8s infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+@media (max-width: 576px){
+    .main{
+        margin-top: 20vh;
+        margin-bottom: 10vh;
+        height:300px;
+        width: 90vw;
+        padding-top:20px;
+        margin-left: 0;
+    }
+    .header{
+        margin-bottom: 10px;   
+    }
+
+    .header label{
+        font-size: 1.0rem;
+    }
+    
+    .inpt{
+        background:none;
+        width: 90%;
+        height: 40px;
+        align-items: center;
+        margin-bottom: 15px;
+
+        
+    }
+    .input input::placeholder{
+        font-size: 13px;
+    }
+    .input button{
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .links p{
+        margin-bottom: -3px;
+    }
+
+    .links p a{
+        padding-right: 20px;
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width:768px) and (min-width: 567px){
+    .main{
+        height:320px;
+        width: 20rem;
+        padding-top:20px;
+        margin-left: 0;
+    }
+    .header{
+        margin-bottom: 20px;   
+    }
+
+    .header label{
+        font-size: 1.2rem;
+    }
+    
+    .inpt{
+        background:none;
+        width: 90%;
+        height: 40px;
+        align-items: center;
+        margin-bottom: 15px;
+
+        
+    }
+    .input input::placeholder{
+        font-size: 0.6rem;
+    }
+    .input button{
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .links p{
+        margin-bottom: 0;
+    }
+
+    .links p a{
+        padding-right: 20px;
+        font-size: 0.6rem;
+    }
+
+}
+
+
+@media (max-width:992px) and (min-width: 768px){
+    .main{
+        height:340px;
+        width: 20rem;
+        padding-top:20px;
+        margin-left: 0;
+    }
+    .header{
+        margin-bottom: 30px;   
+    }
+
+    .header label{
+        font-size: 1.5rem;
+    }
+    
+    .inpt{
+        background:none;
+        width: 90%;
+        height: 40px;
+        align-items: center;
+        margin-bottom: 15px;
+
+        
+    }
+    .input input::placeholder{
+        font-size: 0.7rem;
+    }
+    .input button{
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+   
+    .links p{
+        margin-bottom: 0;
+    }
+
+    .links p a{
+        padding-right: 20px;
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width:1200){
+    .main{
+        height:350px;
+        width: 20rem;
+        padding-top:20px;
+        
+    }
+    .header{
+        margin-bottom: 30px;   
+    }
+
+    .header label{
+        font-size: 1.5rem;
+    }
+    
+    .inpt{
+        background:none;
+        width: 90%;
+        height: 40px;
+        align-items: center;
+        margin-bottom: 15px;
+
+        
+    }
+    .input input::placeholder{
+        font-size: 0.7rem;
+    }
+    .input button{
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .links p{
+        margin-bottom: 0;
+    }
+
+    .links p a{
+        padding-right: 20px;
+        font-size: 0.7rem;
+    }
+
+}

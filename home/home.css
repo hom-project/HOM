@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Raleway&family=Roboto+Mono:wght@100&family=Ubuntu:wght@300&display=swap');
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+/* scrolling news */
+marquee {
+	background-color: #fff;
+	border-radius: 11px;
+	color: #98AFC7;
+	font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    padding: 10px 4px;
+}
+
+/* toggle button */
+.toggle-btn-row, .toggle-btn-col {
+    margin-top: 40px;
+    margin-bottom: 0;
+    border: none;
+    filter:grayscale();
+    color: gray;
+}
+.toggle-btn-row {
+    display: block;
+}
+.toggle-btn-col {
+    display: none;
+}
+
+/* card deck */
+.crypto-logo img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.cd-deck {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 11px;
+    overflow-x: auto;
+}
+
+.deck-1, .deck-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px; 
+}
+
+.crd-neg, .crd-pos {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 11px;
+    padding: 5px 10px;
+    width: 12.7rem;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 2px 7px;
+}
+.crd-pos {
+    background: rgba(26, 137, 23, 0.1);
+    border: 1px solid rgb(0, 217, 100);
+}
+.crd-neg {
+    background: rgba(186, 4, 2, 0.1);
+    border: 1px solid red;
+}
+
+.crd-pos:hover, .crd-neg:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.crd-pos .crypto-value-change {
+    color: #1a8917;
+}
+.crd-neg .crypto-value-change {
+    color: #ff0000;
+}
+
+.fa-arrow-up {
+    color: #00d964;
+}
+.fa-arrow-down {
+    color: red;
+}
+
+.cd-head {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.crypto-value, .crypto-value-change {
+    font-family: 'Raleway', sans-serif;
+}
+
+.cd-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cont-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle-buttons {
+    left: 20%;
+}
+
+/* row views news blog  */
+
+.toggle-row-view .news-blog {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.toggle-row-view .news-section {
+    margin-top: 0.8rem;
+    cursor: pointer;
+    height: 100%;
+    
+}
+
+.toggle-row-view .sec {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border-radius: 11px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.toggle-row-view .sec-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 6px;
+}
+.toggle-row-view .sec-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle-row-view .sec-2 p {
+    padding: 4px;
+    cursor: text;
+}
+.toggle-row-view .sec-2 img {
+    height: 7rem;
+    width: 7rem;
+    padding: 4px;
+    border-radius: 11px;
+}
+
+.toggle-row-view .twitter-section {
+    width: 70%;
+    margin-top: 12px;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.twitter-section h5 {
+    font-weight: bolder;
+    padding: 0px 3px;
+    margin: 0;
+    margin-bottom: 2px;
+    background-color: white;
+    border-radius: 11px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.toggle-row-view .timeline {
+    border-radius: 11px;
+    overflow-y: scroll;
+    height: 25rem;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.toggle-row-view .blog-col {
+    height: 28rem;
+}
+
+/* column views news blog */
+.toggle-column-view .news-blog {
+	display: flex;
+    margin-top: 1.8rem;
+}
+.toggle-column-view .sec {
+	display: flex;
+	flex-direction: column;
+}
+.toggle-column-view .news-section {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.toggle-column-view .timeline {
+	border-radius: 11px;
+	overflow-y: scroll;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.toggle-column-view .blog-post, .toggle-column-view .timeline {
+	height: 450px;
+	margin-bottom: 50px;
+}
+
+.toggle-column-view .blog-post {
+    border-radius: 11px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.toggle-column-view .blog-img img {
+    background: transparent;
+    width: 100%;
+    border-radius: 11px;
+}
+.toggle-column-view .blog-body {
+    background-color: white;
+    padding: 0px 8px;
+    border-radius: 11px;
+}
+.toggle-column-view {
+	display: none;
+}
+
+/* column view news blog */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.toggle-column-view .timeline {
+		height: 950px !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-row-view, .toggle-buttons {
+        display: none;
+    }
+    .toggle-column-view {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .toggle-row-view .blog-col {
+        height: 35rem;
+    }
+}

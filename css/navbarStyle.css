@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.navbar {
+	background: white;
+	border-bottom: 1px solid cadetblue;
+}
+
+.navbar-brand {
+	color: black !important;
+}
+
+.nav-link {
+	color: black !important;
+	padding: 0px;
+}
+
+.nav-item {
+	margin: 4px 8px;
+	border-radius: 20px;
+	border-bottom: 1px solid transparent;
+}
+
+.nav-item:hover {
+	background-color: rgba(128, 128, 128, 0.287);
+	border-radius: 20px;
+	color: white !important;
+}
+
+.nav-logo-ig {
+	height: 20px;
+}
+.nav-logo-tw {
+	height: 23px;
+}
+
+.current {
+    color: red !important;
+
+}
+

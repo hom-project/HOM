@@ -1,0 +1,14 @@
+/* scroll-bar */
+.personalised-scrollbar ::-webkit-scrollbar {
+	width: 10px;
+}
+.personalised-scrollbar ::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+.personalised-scrollbar ::-webkit-scrollbar-thumb {
+	background: gray;
+	border-radius: 11px;
+}
+.personalised-scrollbar ::-webkit-scrollbar-thumb:hover {
+	background: rgb(104, 103, 103);
+}
